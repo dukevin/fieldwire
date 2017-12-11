@@ -1,0 +1,243 @@
+html {
+	font-family: "Helvetica Neue", sans-serif !important;
+}
+body {
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+}
+#header {
+	/*background-color: #FDBB48;*/
+	background-color: #333333;
+	height: 56px;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+#logo {
+	color: #FDBB48;
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 35px;
+	display:block;
+	padding-top:10px;
+}
+#logo img {
+	vertical-align: middle;
+	width: 34px;
+	height: 34px;
+	margin-top: -1px;
+	margin-right: 6px;
+}
+#sidebar {
+	width: 20%;
+	background-color: #aaa;
+	height: 100%;
+	position:fixed;
+}
+#sidebar > div {
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.button {
+	border: 1px solid rgb(68, 136, 217);
+	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(68, 136, 217);
+	width: 100px;
+	text-align: center;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	transition: 0.5s all;
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+}
+.button:hover {
+	background-color: rgb(18, 96, 177);
+}
+#sidebar #title {
+	font-weight: bold;
+	font-size: 20pt;
+	color: #333;
+}
+#body {
+	position: fixed;
+	width: 80%;
+	margin-left: 20%;
+	height: 100%;
+}
+#body #none {
+	text-align: center;
+	font-size: 24pt;
+	color: gray;
+	margin-top: 60px;
+}
+[class^="popContent-"]
+{
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+	clear: both;
+}
+#dialoge label
+{
+	display: block;
+	color: #555;
+}
+#dialoge {
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 6px;
+	background-clip: padding-box;
+	background-color: #fff;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	outline: 0;
+	width: 40%;
+	margin: 30px auto;
+	position: absolute;
+	box-sizing: border-box;
+	font: 13px Open Sans,sans-serif;
+	padding: 25px;
+	z-index: 9999;
+	top: 10%;
+	left: 30%;
+}
+#dialoge-content input[type="text"]
+{
+	width: 60%;
+}
+input[type="text"] {
+	border: 1px solid #c8d8e2;
+	border-radius: 3px;
+	height: 20px;
+	padding: 5px 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	color:#555;
+	transition: 0.5s all;
+	font-size: 11pt
+}
+input[type="text"]:focus {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+.popContent-btn {
+	float:right;
+	margin-right: 20px;
+}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.5);
+}
+.closeBtn {
+	width: 17px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	color: gray;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.5s all;
+	border: none;
+	background: none;
+}
+.closeBtn:hover {
+	color: darkred;
+}
+.project {
+	background-color: #888;
+	display: block;
+	height: 70px;
+	font-size: 25px;
+	line-height: 70px;
+	margin: 0px !important;
+	border-bottom: 1px solid #777;
+	cursor: pointer;
+	transition: all 1s;
+}
+.project.selected {
+	background-color: #FDBB48;
+	width: calc(100% + 10px);
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.project:not(.selected):hover{
+	background-color: #666;
+}
+.fileinput {
+	padding: 12px;
+	display:none;
+}
+#fileupload {
+	float: right;
+}
+.bar {
+    height: 18px;
+    background-color: #5CB85C;
+    transition: 1s all;
+}
+#body-header
+{
+	width: 150px;
+	margin: 20px;
+	height: 50px;
+	float:right;
+}
+.fileinput input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 50px !important;
+    direction: ltr;
+    cursor: pointer;
+    width:200px;
+}
+#content {
+	padding: 100px;
+}
+.file {
+	width: 200px;
+	height: 200px;
+	display: block;
+	float: left;
+	margin: 25px;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	transition: all 0.5s;
+	background-color: rgba(253,187,72, 0.2);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.file .name {
+	position: absolute;
+	bottom: 0;
+	color:white;
+	background-color:rgba(0,0,0,0.6);
+	width: 100%;
+	text-align:center;
+	height: 30px;
+	line-height: 30px;
+}
+.file:hover {
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1),0 3px 10px 0 rgba(0,0,0,0.1) !important;
+}
+#user {
+	width: 200px;
+	float: right;
+	position: absolute;
+	top: 16px;
+	right: 0;
+	color: #FDBB48;
+	cursor: pointer;
+}
